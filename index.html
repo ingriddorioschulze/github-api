@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>GitHub API</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <div class="text">enter your GitHub credentials</div>
+    <input
+      class="username"
+      type="text"
+      name="yourusername"
+      placeholder="username"
+    />
+    <input
+      class="password"
+      type="password"
+      name="password"
+      placeholder="password"
+    />
+    <div class="text">enter a GitHub user</div>
+    <input
+      class="gitusername"
+      type="text"
+      name="gitusername"
+      placeholder="username"
+    />
+    <button class="button" type="button" name="button">go</button>
+    <div class="results"></div>
+
+    <script id="repositories" type="text/x-handlebars-template">
+      <ul>
+          {{#repositories }}
+          <img class="avatar" src= {{ owner.avatar_url }}>
+          <div class="fullname">{{ full_name }}</div>
+          <div class="listall"></div>
+          {{/repositories }}
+      </ul>
+    </script>
+
+    <script id="commits" type="text/x-handlebars-template">
+      <ul>
+          {{#commits }}
+          <li>{{ commit.message }} ({{ sha }}) - {{ commit.author.name }}</li>
+          {{/commits }}
+      </ul>
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #33313b;
+  font-family: Josefin Slab;
+}
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  padding-top: 5px;
+}
+
+.fullname {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 18px;
+  color: #fcf9ec;
+}
+
+.listall {
+  padding-bottom: 30px;
+  font-size: 18px;
+  line-height: 40px;
+  color: #fcf9ec;
+}
+
+.text {
+  font-size: 20px;
+  padding: 10px;
+  color: #fcf9ec;
+}
+
+.username,
+.password,
+.gitusername {
+  width: 150px;
+  height: 25px;
+  border-radius: 2px;
+  border: none;
+  margin: 10px;
+  padding: 10px;
+  color: #393e46;
+  font-family: Josefin Slab;
+  font-size: 15px;
+}
+
+.button {
+  width: 40px;
+  height: 25px;
+  border-radius: 2px;
+  border: none;
+  margin: 10px;
+  font-size: 15px;
+  color: #393e46;
+  font-family: Josefin Slab;
+}
+
+::placeholder {
+  font-size: 15px;
+  text-align: center;
+  color: #393e46;
+  font-family: Josefin Slab;
+}
+
+ul {
+  padding: 10px;
+}
